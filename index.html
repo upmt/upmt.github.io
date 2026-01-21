@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="μPMT - micro Phenomenology Modelling Tool for analyzing microphenomenology interviews">
+    <title>μPMT - micro Phenomenology Modelling Tool</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 60px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .description {
+            margin: 30px 0;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        .screenshot-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .screenshot-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: normal;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .links li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.05em;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+        .app-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .app-link:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>μPMT</h1>
+            <div class="subtitle">micro Phenomenology Modelling Tool</div>
+        </header>
+
+        <section class="description">
+            <p>
+                μPMT is aimed at researchers using microphenomenology interviews (also known as explicitation interviews) 
+                to study lived experience. It has been designed to help analyze the micro-dynamics of experience as 
+                described in interview transcriptions, by modelling and formalizing the sequential unfolding of 
+                "experience moments" described with categories and properties, and linked to the descriptemes - excerpts 
+                of the transcript - that justify them.
+            </p>
+        </section>
+
+        <div class="screenshot-container">
+            <img src="https://raw.githubusercontent.com/upmt/upmt/main/public/favicon.png" alt="μPMT Application Interface" style="max-width: 300px;">
+            <div class="screenshot-caption">μPMT Logo</div>
+        </div>
+
+        <section class="section">
+            <a href="https://upmt.github.io/upmt/" class="app-link">Launch μPMT Application</a>
+        </section>
+
+        <section class="section">
+            <h2>Resources</h2>
+            <ul class="links">
+                <li><a href="https://github.com/upmt/upmt">Source Code on GitHub</a></li>
+                <li><a href="https://github.com/upmt/upmt/wiki/%CE%BCPMT-documentation">Documentation</a></li>
+                <li><a href="https://github.com/upmt/upmt/discussions">Community Discussions</a></li>
+                <li><a href="https://github.com/upmt/upmt/issues">Report Issues & Request Features</a></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>About</h2>
+            <p>
+                μPMT is open-source software released under the GNU GPLv3 license. It is designed to support 
+                researchers in the field of micro-phenomenology and lived experience studies, providing tools 
+                for systematic analysis of interview transcripts and experience modeling.
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2024-2026 μPMT Project | Licensed under GNU GPLv3</p>
+        </footer>
+    </div>
+</body>
+</html>
